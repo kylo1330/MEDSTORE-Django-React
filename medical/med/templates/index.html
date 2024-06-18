@@ -1,0 +1,17 @@
+{% extends 'layout/app-layout.html' %}
+
+{% block 'content' %}
+    <div style="text-align: center; background-color: #f0f0f0; padding: 20px;">
+        <h1 style="font-family: Arial, sans-serif; color: #333;">Welcome to Med Store</h1>
+        <p style="color: #555;">Create your account</p>
+    </div>
+    <div style="text-align: center; padding: 20px;">
+
+            {% csrf_token %}
+
+       <button type= "signup" class ="btn btn-block bg-primary "> <a href="{% url 'signup' %}">Signup</a></button>
+
+
+        <p style="margin-top: 20px;">Already have an account? <a href="{% url 'login' %}">Log in here</a></p>
+    </div>
+{% endblock %}

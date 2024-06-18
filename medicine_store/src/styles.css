@@ -1,0 +1,55 @@
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling on the entire page */
+  }
+  
+  .welcome-section {
+    background: url("https://img.freepik.com/premium-photo/directly-shot-red-telephone-black-background_1048944-5268863.jpg?w=1060") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; /* Ensure the section covers the entire viewport height */
+    overflow-y: auto; /* Allow scrolling within the welcome section if content overflows */
+  }
+  
+  .welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-section p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  body, html {
+    padding: 0;
+    margin: 0;
+    overscroll-behavior: none;
+}
+
+
+/* styles.css */
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media-buttons a {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between buttons */
+}
+
+.social-media-buttons svg {
+  width: 40px;
+  height: 40px;
+  fill: #000; /* Adjust the color of the icons */
+}
+
+/* Hover effect for icons */
+.social-media-buttons a:hover svg {
+  fill: #007bff; /* Change the color on hover */
+}

@@ -1,0 +1,46 @@
+.signup {
+    padding: 10px; /* Decrease padding to make the signup bar smaller */
+    text-align: center;
+    color: #333; /* Change the color of the signup font */
+}
+
+.signup form {
+    display: inline-block;
+    text-align: left;
+}
+
+.signup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"] {
+    width: 100%; /* Set width to 100% */
+    padding: 8px; /* Decrease padding for smaller input fields */
+    margin-bottom: 10px; /* Decrease margin-bottom for closer spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 40px; /* Adjust the width as needed */
+    height: auto;
+}

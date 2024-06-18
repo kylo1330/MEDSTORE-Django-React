@@ -1,0 +1,28 @@
+{%extends 'layout/app-layout.html'%}
+{%block 'content'%}
+<h1>View medicines</h1>
+<form action="{%url 'searchmedicine' %}" method="GET">
+    <input type="text" name="q" placeholder="search by name">
+    <button type="submit">Search</button>
+</form>
+<table border="1">
+    <tr><th>id</th>
+        <th>medcine_name</th>
+        <th>description</th>
+        <th>price</th>
+        <th>quantity</th>
+        <th colspan="2">Actions</th></tr>
+        
+    {%for store in store_list%}
+    <tr>
+    <td>{{store.id}}</td>
+    <td>{{ store.name }} </td> 
+    <td>{{ store.description}}</td>
+    <td>{{ store.price }}</td>
+    <td>{{ store.quantity}}</td>
+    <td ><a href="{%url 'updatemedicine' store.id %}" class="btn btn-success" value="edit" type="submit">Edit</a></td>
+    <td><a href="{%url 'deletemedicine' store.id %}" class="btn btn-success" value="edit" type="submit">Delete</a></td></tr>
+
+       {% endfor %}
+    </table>
+{%endblock%}

@@ -1,0 +1,61 @@
+/* WelcomeSection.css */
+.welcome-section {
+  font-family: Montserrat, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px; /* Padding to accommodate the height of the social icons */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.quote {
+  color: #000;
+  font-weight: bold;
+}
+
+.button-container {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+/* Social media icons styles */
+.social-icons {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 5px; /* Adjust the spacing between icons */
+}
+
+.social-icons li a {
+  display: block;
+  width: 40px; /* Adjust the size of the icons */
+  height: 40px; /* Adjust the size of the icons */
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px; /* Adjust the size of the icons */
+  border-radius: 50%;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  color: #fff;
+}
+
+.social-icons li a .icon {
+  color: #262626;
+}
+
+.social-icons li a:hover .icon {
+  transform: rotateY(360deg);
+}
